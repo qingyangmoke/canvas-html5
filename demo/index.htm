@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>测试</title>
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="yes" name="apple-touch-fullscreen" />
+  <meta content="telephone=no,email=no" name="format-detection" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <style>
+    body,
+    html,
+      {
+      padding: 0;
+      margin: 0;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background: #dddddd;
+    }
+
+    #canvas {
+      margin: 10px;
+      background: #fff;
+      border: 1px solid burlywood;
+
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="canvas" width="800" height="600">canvas not support</canvas>
+  <script src="../dist/canvas-html5.js"></script>
+  <script type="text/javascript">
+    var canvas = document.getElementById('canvas');
+    // new canvasHtml5.text(canvas).test();
+    // new canvasHtml5.paint(canvas).test();
+    // new canvasHtml5.pattern(canvas).test();
+    new canvasHtml5.clock(canvas).test();
+    // new canvasHtml5.shadow(canvas).test();
+  </script>
+</body>
+
+</html>

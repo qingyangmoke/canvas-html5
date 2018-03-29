@@ -1,0 +1,4 @@
+dist/*.js
+config/*.js
+demo/*.js
+demo/js/*.js
